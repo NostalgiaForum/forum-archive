@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.8.1 server (NC1.1.0) - Discussion - NostalgiaForum Archives</title>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.3.darkly.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <ol class="breadcrumb">
+            <li><a href="../../index.html">Forums</a></li>
+            <li><a href="../discussion.html">Discussion</a></li>
+            <li class="active">0.8.1 server (NC1.1.0)</li>
+        </ol>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/default_avatar.png" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Kris_Perry</small></h4>
+                        <h3>0.8.1 server (NC1.1.0)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Hello, I've recently started my own server and your forum is a treasure trove! So far I've been
+                    alright getting a few of the plugins from here working(Great collection, thank you sm for preserving
+                    it!), but there are a few things I can't get working or do not understand the code enough to fix.
+                    <br><br>
+                    I wonder if there is a bundle of working 0.8.1 plugins?
+                    or if anyone still cares enough about 0.8.1 to talk me through my PHP issues?
+                    <br><br>
+                    Here's an Explosion.php I modified to add mobGriefing on/off, you will also need to add the following
+                    line to your PocketMinecraftServer.php:
+                </p>
+
+                <p>Line 100:</p>
+                <blockquote>
+                    <code>Explosion::$entityGriefing = $this->extraprops->get("enable-mob-griefing");</code>
+                </blockquote>
+                <p>and don't forget to set the enable-mob-griefing switch in your server.properties! </p>
+                <br>
+                <p><strong>Additional Information:</strong> Modified Explosion.php with Mob Griefing added.</p>
+                <p><strong>From:</strong> Pocketmine-MP</p>
+            </div>
+            <div class="panel-footer">
+                <h4>Attachments:</h4>
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/icons/attachment.png" alt="Attachment Icon" class="media-object"
+                            width="32">
+                    </div>
+                    <div class="media-body">
+                        <a href="../../attachments/Explosion.php">Explosion.php</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/7.jpg" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">EnirboreHemag</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>NostalgiaCore already allows to disable mob griefing, enable-explosions in extra.properties</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/default_avatar.png" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Kris_Perry</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>Ahh yes that's true but then you can't use TNT either.<br> This differentiates Creeper Damage from TNT
+                    and only prevents the former.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../bootstrap/jquery.min.js"></script>
+    <script src="../../bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

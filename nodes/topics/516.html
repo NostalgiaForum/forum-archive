@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert 0.8.1 server to 0.11.1 - Discussion - NostalgiaForum Archives</title>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.3.darkly.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <ol class="breadcrumb">
+            <li><a href="../../index.html">Forums</a></li>
+            <li><a href="../discussion.html">Discussion</a></li>
+            <li class="active">Convert 0.8.1 server to 0.11.1</li>
+        </ol>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/default_avatar.png" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">akosidahon</small></h4>
+                        <h3>Convert 0.8.1 server to 0.11.1</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Is it possible to convert a 0.8.1 server to 0.11.1? With the players, items, and blocks preserved.
+                    <br><br>
+                    I'm running a NostalgiaCore_1.1.0beta4 server and I would like to convert it to PocketMine-MP
+                    1.5dev-1438 (the Festival repo by realfreehij).
+                    <br><br>
+                    When I check the worlds folder, the files are different. Copying the NostalgiaCore world to the
+                    Festival world doesn't do anything.
+                    <br><br>
+                    Please help, thanks!
+                </p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/2.jpg" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">eqozqq</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>i dont think you can move world to the festival</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/7.jpg" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">EnirboreHemag</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>NostalgiaCore 0.8 uses pmmp 1.3.12 world format, festival uses mcregion/anvil(introduced in pmmp 1.4
+                    i think?). PMMP 1.4 might have tools that could convert one world format to another.</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/7.jpg" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">EnirboreHemag</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <blockquote>
+                    <p>NostalgiaCore 0.8 uses pmmp 1.3.12 world format, festival uses mcregion/anvil(introduced in pmmp
+                        1.4 i think?). PMMP 1.4 might have tools that could convert one world format to another.</p>
+                </blockquote>
+                <p>also festival might support leveldb(which is what is used by vanilla probably), so u probably could
+                    do something like pmf->0.8.1->leveldb</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/default_avatar.png" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">akosidahon</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <blockquote>
+                    <p>also festival might support leveldb(which is what is used by vanilla probably), so u probably
+                        could do something like pmf->0.8.1->leveldb</p>
+                </blockquote>
+                <p>
+                    Thanks man. I checked and Festival does have leveldb in the format folder. Im a noob at this, can
+                    you help me understand what the process for pmf->0.8.1->leveldb looks like?
+                    <br><br>
+                    also ive found these two:
+                    <a href="https://github.com/Muirfield/pmimporter"
+                        target="_blank">https://github.com/Muirfield/pmimporter</a><br>
+                    <a href="https://github.com/ljyloo/LevelDb2Avnil"
+                        target="_blank">https://github.com/ljyloo/LevelDb2Avnil</a>
+                    <br><br>
+                    will these work for nostalgiacore to festival?
+                </p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/default_avatar.png" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">akosidahon</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <p>moreover, is it possible to do anything with the _LastJoinedServer folder in the
+                    games/com.mojang/minecraftWorlds directory?</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="../../data/avatars/7.jpg" class="media-object img-circle" width="64">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">EnirboreHemag</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <blockquote>
+                    <p>moreover, is it possible to do anything with the _LastJoinedServer folder in the
+                        games/com.mojang/minecraftWorlds directory?</p>
+                </blockquote>
+                <p>
+                    _LastJoinedServer (in 0.8.1) contains client-generated word with seed that is sent in
+                    StartGamePacket, vanilla servers use it to make chunkdata packets smaller.
+                </p>
+                <br><br>
+                <blockquote>
+                    <p>
+                        Thanks man. I checked and Festival does have leveldb in the format folder. Im a noob at this,
+                        can you help me understand what the process for pmf->0.8.1->leveldb looks like?<br>
+                        also ive found these two:<br>
+                        <a href="https://github.com/Muirfield/pmimporter"
+                            target="_blank">https://github.com/Muirfield/pmimporter</a><br>
+                        <a href="https://github.com/ljyloo/LevelDb2Avnil"
+                            target="_blank">https://github.com/ljyloo/LevelDb2Avnil</a>
+                        <br><br>
+                        will these work for nostalgiacore to festival?
+                    </p>
+                </blockquote>
+                <p>You can convert pocketmine world to vanilla using SimpleWorlds plugin (/swe worldname). You should be able to open 0.8 worlds in 0.9/0.10/0.11 which should convert it to leveldb(if vanilla uses it ofc).</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../bootstrap/jquery.min.js"></script>
+    <script src="../../bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
